@@ -17,7 +17,9 @@ const ALLOWED_COMMANDS = new Set([
 ]);
 
 // Endpoint de TU backend (recomendado)
-const BACKEND_ENDPOINT = "http://localhost:3000/api/command"; 
+//const BACKEND_ENDPOINT = "http://localhost:3000/api/command"; 
+const BACKEND_ENDPOINT = "https://TU-BACKEND.onrender.com/api/command";
+
 // luego para GitHub Pages será: https://TU-BACKEND.onrender.com/api/command
 
 /* ==========================

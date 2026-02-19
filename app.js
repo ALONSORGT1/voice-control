@@ -18,7 +18,11 @@ const ALLOWED_COMMANDS = new Set([
 
 // Endpoint de TU backend (recomendado)
 //const BACKEND_ENDPOINT = "http://localhost:3000/api/command"; 
-const BACKEND_ENDPOINT = "https://TU-BACKEND.onrender.com/api/command";
+const isLocal = location.hostname === "localhost" || location.hostname === "127.0.0.1";
+const BACKEND_ENDPOINT = isLocal
+  ? "http://localhost:3000/api/command"
+  : "https://voice-control-fluo.onrender.com/api/command";
+
 
 // luego para GitHub Pages será: https://TU-BACKEND.onrender.com/api/command
 
